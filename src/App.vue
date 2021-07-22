@@ -1,21 +1,24 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <StatusReport/>
       <!-- <runtime-report></runtime-report> -->
+      <!-- <faults></faults> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import StatusReport from './components/StatusReport';
 // import RuntimeReport from './components/RuntimeReport.vue';
+// import Faults from './components/Faults.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    // RuntimeReport
+    StatusReport,
+    // RuntimeReport,
+    // Faults
   },
 
   data() {

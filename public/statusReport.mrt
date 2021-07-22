@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <StiSerializer version="1.02" type="Net" application="StiReport">
+  <AutoLocalizeReportOnRun>True</AutoLocalizeReportOnRun>
   <Dictionary Ref="1" type="Dictionary" isKey="true">
     <BusinessObjects isList="true" count="0" />
     <Databases isList="true" count="1">
@@ -14,11 +15,11 @@
       <root Ref="3" type="DataTableSource" isKey="true">
         <Alias>root</Alias>
         <Columns isList="true" count="5">
-          <value>name,System.String</value>
-          <value>power,System.Decimal</value>
-          <value>rssi,System.Decimal</value>
-          <value>sys___active,System.Decimal</value>
-          <value>sys___connected,System.Decimal</value>
+          <value>ORIGINAL,name,name,name,System.String,e882365672004164b455e3a1397d2da7</value>
+          <value>ORIGINAL,power,power,power,System.Decimal,_x0037_000436f1e4d4c16bf2426042c63d6b8</value>
+          <value>ORIGINAL,rssi,rssi,rssi,System.Decimal,bf7d8b5b8fea4a35a1136a0a6a0f7684</value>
+          <value>ORIGINAL,sys___active,sys___active,sys___active,System.Decimal,_x0033_443db5d98464235be9ac15c1f3e02ad</value>
+          <value>ORIGINAL,sys___connected,sys___connected,sys___connected,System.Decimal,_x0032_813fef3f47f41fdb8fc5ed0959d66d0</value>
         </Columns>
         <Dictionary isRef="1" />
         <Key>5c6b212f199342029692025091a24ad6</Key>
@@ -32,28 +33,38 @@
     <Variables isList="true" count="0" />
   </Dictionary>
   <EngineVersion>EngineV2</EngineVersion>
-  <GlobalizationStrings isList="true" count="0" />
+  <GlobalizationStrings isList="true" count="1">
+    <Item3 Ref="4" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>he-IL</CultureName>
+      <Items isList="true" count="4">
+        <value>TableCell1.Text,שם</value>
+        <value>TableCell3.Text,עוצמה</value>
+        <value>TableCell4.Text,עוצמת_x0020_קליטה</value>
+        <value>Text1.Text,דו_x0022_ח_x0020_סטטוס</value>
+      </Items>
+    </Item3>
+  </GlobalizationStrings>
   <Key>31ea613e6505442aa595c41c2688f1b8</Key>
   <MetaTags isList="true" count="0" />
   <Pages isList="true" count="1">
-    <Page1 Ref="4" type="Page" isKey="true">
+    <Page1 Ref="5" type="Page" isKey="true">
       <Border>None;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
       <Components isList="true" count="11">
-        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
           <Brush>[242:242:242]</Brush>
           <ClientRectangle>0,0.4,21,2.4</ClientRectangle>
           <Components isList="true" count="1">
-            <Text1 Ref="6" type="Text" isKey="true">
+            <Text1 Ref="7" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.2,0,12.4,2.4</ClientRectangle>
+              <ClientRectangle>0.4,0,12.4,2.4</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
               <Font>Calibri,36,Bold</Font>
               <Margins>0,0,0,0</Margins>
               <Name>Text1</Name>
-              <Page isRef="4" />
-              <Parent isRef="5" />
+              <Page isRef="5" />
+              <Parent isRef="6" />
               <Text>Status Report</Text>
               <TextBrush>[23:54:93]</TextBrush>
               <Type>Expression</Type>
@@ -63,10 +74,10 @@
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Name>PageHeaderBand1</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
         </PageHeaderBand1>
-        <TableCell1 Ref="7" type="TableCell" isKey="true">
+        <TableCell1 Ref="8" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>0,3.6,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -76,14 +87,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell1</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>name</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell1>
-        <TableCell2 Ref="8" type="TableCell" isKey="true">
+        <TableCell2 Ref="9" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>4.2,3.6,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -93,14 +104,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell2</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>sys___active</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell2>
-        <TableCell3 Ref="9" type="TableCell" isKey="true">
+        <TableCell3 Ref="10" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>8.4,3.6,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -110,14 +121,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell3</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>power</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell3>
-        <TableCell4 Ref="10" type="TableCell" isKey="true">
+        <TableCell4 Ref="11" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>12.6,3.6,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -127,14 +138,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell4</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>rssi</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell4>
-        <TableCell5 Ref="11" type="TableCell" isKey="true">
+        <TableCell5 Ref="12" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>16.8,3.6,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -144,14 +155,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell5</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>sys___connected</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell5>
-        <TableCell6 Ref="12" type="TableCell" isKey="true">
+        <TableCell6 Ref="13" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>0,4.4,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -161,14 +172,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell6</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>{root.name}</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell6>
-        <TableCell7 Ref="13" type="TableCell" isKey="true">
+        <TableCell7 Ref="14" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>4.2,4.4,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -178,14 +189,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell7</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>{root.sys___active}</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell7>
-        <TableCell8 Ref="14" type="TableCell" isKey="true">
+        <TableCell8 Ref="15" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>8.4,4.4,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -195,14 +206,14 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell8</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>{root.power}</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell8>
-        <TableCell9 Ref="15" type="TableCell" isKey="true">
+        <TableCell9 Ref="16" type="TableCell" isKey="true">
           <Brush>White</Brush>
           <ClientRectangle>16.8,4.4,4.2,0.8</ClientRectangle>
           <Conditions isList="true" count="0" />
@@ -212,19 +223,19 @@
           <JoinCells isList="true" count="0" />
           <Margins>5,0,5,0</Margins>
           <Name>TableCell9</Name>
-          <Page isRef="4" />
-          <Parent isRef="4" />
+          <Page isRef="5" />
+          <Parent isRef="5" />
           <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
           <Text>{root.sys___connected}</Text>
           <TextBrush>Black</TextBrush>
           <VertAlignment>Center</VertAlignment>
         </TableCell9>
-        <Tableroot Ref="16" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+        <Tableroot Ref="17" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,3.6,21,3.3</ClientRectangle>
-          <Components isList="true" count="10">
-            <Tableroot_Cell1 Ref="17" type="TableCell" isKey="true">
+          <ClientRectangle>0,3.6,21,4.1</ClientRectangle>
+          <Components isList="true" count="15">
+            <Tableroot_Cell1 Ref="18" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>0,0,8,1.8</ClientRectangle>
@@ -232,20 +243,20 @@
               <Expressions isList="true" count="0" />
               <Font>Arial,12,Bold</Font>
               <ID>0</ID>
-              <Interaction Ref="18" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+              <Interaction Ref="19" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
                 <SortingColumn>Tableroot.name</SortingColumn>
               </Interaction>
               <JoinCells isList="true" count="0" />
-              <Margins>5,0,5,0</Margins>
+              <Margins>15,0,5,0</Margins>
               <Name>Tableroot_Cell1</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>name</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell1>
-            <Tableroot_Cell2 Ref="19" type="TableCell" isKey="true">
+            <Tableroot_Cell2 Ref="20" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>8,0,3.4,1.8</ClientRectangle>
@@ -256,14 +267,14 @@
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell2</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>sys___active</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell2>
-            <Tableroot_Cell3 Ref="20" type="TableCell" isKey="true">
+            <Tableroot_Cell3 Ref="21" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>11.4,0,3,1.8</ClientRectangle>
@@ -271,20 +282,20 @@
               <Expressions isList="true" count="0" />
               <Font>Arial,12,Bold</Font>
               <ID>2</ID>
-              <Interaction Ref="21" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+              <Interaction Ref="22" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
                 <SortingColumn>Tableroot.power</SortingColumn>
               </Interaction>
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell3</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>power</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell3>
-            <Tableroot_Cell4 Ref="22" type="TableCell" isKey="true">
+            <Tableroot_Cell4 Ref="23" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>14.4,0,2.4,1.8</ClientRectangle>
@@ -292,20 +303,20 @@
               <Expressions isList="true" count="0" />
               <Font>Arial,12,Bold</Font>
               <ID>3</ID>
-              <Interaction Ref="23" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+              <Interaction Ref="24" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
                 <SortingColumn>Tableroot.rssi</SortingColumn>
               </Interaction>
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell4</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>rssi</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell4>
-            <Tableroot_Cell5 Ref="24" type="TableCell" isKey="true">
+            <Tableroot_Cell5 Ref="25" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>16.8,0,4.2,1.8</ClientRectangle>
@@ -316,14 +327,15 @@
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell5</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
-              <Text>sys___connected</Text>
+              <Text>fault</Text>
               <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell5>
-            <Tableroot_Cell6 Ref="25" type="TableCell" isKey="true">
+            <Tableroot_Cell6 Ref="26" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>0,1.8,8,1.5</ClientRectangle>
@@ -332,16 +344,16 @@
               <Font>Arial,12</Font>
               <ID>5</ID>
               <JoinCells isList="true" count="0" />
-              <Margins>5,0,5,0</Margins>
+              <Margins>15,0,5,0</Margins>
               <Name>Tableroot_Cell6</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>{root.name}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell6>
-            <Tableroot_Cell7 Ref="26" type="TableCell" isKey="true">
+            <Tableroot_Cell7 Ref="27" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>8,1.8,3.4,1.5</ClientRectangle>
@@ -352,14 +364,14 @@
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell7</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>{root.sys___active}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell7>
-            <Tableroot_Cell8 Ref="27" type="TableCell" isKey="true">
+            <Tableroot_Cell8 Ref="28" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>11.4,1.8,3,1.5</ClientRectangle>
@@ -370,14 +382,14 @@
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell8</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>{root.power}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell8>
-            <Tableroot_Cell9 Ref="28" type="TableCell" isKey="true">
+            <Tableroot_Cell9 Ref="29" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>14.4,1.8,2.4,1.5</ClientRectangle>
@@ -388,50 +400,129 @@
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell9</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
               <Text>{root.rssi}</Text>
               <TextBrush>Black</TextBrush>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell9>
-            <Tableroot_Cell10 Ref="29" type="TableCell" isKey="true">
+            <Tableroot_Cell10 Ref="30" type="TableCell" isKey="true">
               <Border>Bottom;[242:242:242];1;Solid;False;4;Black</Border>
               <Brush>White</Brush>
               <ClientRectangle>16.8,1.8,4.2,1.5</ClientRectangle>
-              <Conditions isList="true" count="0" />
+              <Conditions isList="true" count="2">
+                <value>_x007B_root.sys___active_x0020__x003D__x003D__x0020_0_x0020__x0026__x0020_root.sys___connected_x0020__x003D__x003D__x0020_0_x007D_,Red,Transparent,Arial_x002C_12_x002C_Bold,True,True,_x0022_Yes_x0022_,,Bottom</value>
+                <value>_x007B_root.sys___active_x0020__x0021__x003D__x0020_0_x0020__x007C__x007C__x0020_root.sys___connected_x0020__x0021__x003D__x0020_0_x007D_,[0:176:80],Transparent,Arial_x002C_12_x002C_Bold,True,True,_x0022_No_x0022_,,Bottom</value>
+              </Conditions>
               <Expressions isList="true" count="0" />
               <Font>Arial,12</Font>
               <ID>9</ID>
               <JoinCells isList="true" count="0" />
               <Margins>5,0,5,0</Margins>
               <Name>Tableroot_Cell10</Name>
-              <Page isRef="4" />
-              <Parent isRef="16" />
+              <Page isRef="5" />
+              <Parent isRef="17" />
               <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
-              <Text>{root.sys___connected}</Text>
               <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Tableroot_Cell10>
+            <Tableroot_Cell11 Ref="31" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,3.3,8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>15</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Tableroot_Cell11</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </Tableroot_Cell11>
+            <Tableroot_Cell12 Ref="32" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>8,3.3,3.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>16</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Tableroot_Cell12</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </Tableroot_Cell12>
+            <Tableroot_Cell13 Ref="33" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>11.4,3.3,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>17</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Tableroot_Cell13</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </Tableroot_Cell13>
+            <Tableroot_Cell14 Ref="34" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>14.4,3.3,2.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>18</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Tableroot_Cell14</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </Tableroot_Cell14>
+            <Tableroot_Cell15 Ref="35" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>16.8,3.3,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>19</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Tableroot_Cell15</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </Tableroot_Cell15>
           </Components>
           <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
           <DataSourceName>root</DataSourceName>
           <Expressions isList="true" count="0" />
           <Filters isList="true" count="0" />
           <HeaderRowsCount>1</HeaderRowsCount>
           <MinHeight>0.60000000000000009</MinHeight>
           <Name>Tableroot</Name>
-          <NumberID>15</NumberID>
-          <Page isRef="4" />
-          <Parent isRef="4" />
-          <RowCount>2</RowCount>
+          <NumberID>20</NumberID>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <RowCount>3</RowCount>
           <Sort isList="true" count="0" />
         </Tableroot>
       </Components>
       <Conditions isList="true" count="0" />
       <Expressions isList="true" count="0" />
       <Guid>9ff8318a37aa4805b056b0fc8e18a58b</Guid>
-      <Interaction Ref="30" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+      <Interaction Ref="36" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
         <SortingColumn>Tableroot.name</SortingColumn>
       </Interaction>
       <Margins>0,0,0,0</Margins>
@@ -452,10 +543,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>7/20/2021 10:18:11 AM</ReportChanged>
+  <ReportChanged>7/21/2021 5:07:40 PM</ReportChanged>
   <ReportCreated>7/19/2021 10:55:43 AM</ReportCreated>
   <ReportFile>C:\Users\sharo\Desktop\statusReport.mrt</ReportFile>
-  <ReportGuid>5db0b11fa5424a43957bfd793a12a478</ReportGuid>
+  <ReportGuid>30c66476996d4905a6b1d979fa88aca4</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
   <ReportVersion>2021.3.4.0</ReportVersion>
